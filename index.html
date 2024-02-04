@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="p-2 bg-danger text-center text-white">
+        <h1>To Do List</h1>
+    </header>
+    <!-- End Header -->
+    <!-- Start Inputs Section -->
+    <section dir="rtl" class="bg-danger mt-3 py-4" style="border-top: 2px solid black;border-bottom: 2px solid black;">
+        <div class="container-fluid">
+            <input id="task-name" type="text" class="form-control" placeholder="اسم المهمة: ">
+        <button id="save-btn" class="btn btn-success mt-3">حفظ</button>
+        <button id="del-all-btn" class="btn btn-warning mt-3 me-2" style="display: none;">حذف الكل</button>
+        </div>
+    </section>
+    <!-- End Inputs Section -->
+    <!-- Start Tasks Section -->
+    <section class="tasks bg-danger mt-3 py-4"dir="rtl" style="border-top: 2px solid black;border-bottom: 2px solid black;">
+        <div class="container-fluid" id="tasks">
+            
+        </div>
+    </section>
+    <!-- End Tasks Section -->
+    <!-- Bootstrap JS -->
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
